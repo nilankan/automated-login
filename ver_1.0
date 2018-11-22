@@ -1,0 +1,18 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+usernameStr = 'nilankanchoudhury@rocketmail.com'
+passwordStr = '1234567890n'
+k = 0
+browser = webdriver.Chrome()
+browser.get(('https://www.coursera.org/?authMode=login'))
+#fill in username and password
+username = browser.find_element_by_id('emailInput_5-input')
+password = browser.find_element_by_id('passwordInput_6-input')
+login = browser.find_element_by_xpath('//button[@data-courselenium="login-form-submit-button"]')
+print('Hello World')
+username.send_keys(usernameStr)
+password.send_keys(passwordStr)
+login.click()
+browser.close()
