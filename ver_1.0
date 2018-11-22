@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-usernameStr = 'nilankanchoudhury@rocketmail.com'
-passwordStr = '1234567890n'
+usernameStr = '************'
+passwordStr = '*********'
 k = 0
 browser = webdriver.Chrome()
 browser.get(('https://www.coursera.org/?authMode=login'))
